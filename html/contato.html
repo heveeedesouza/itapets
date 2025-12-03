@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Ita Pet</title>
+    <link rel="stylesheet" href="css/siteCSS.css">
+    <link rel="stylesheet" href="css/siteCSS2.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Avaliação Ita Pet</h1>
+    </header>
+    <hr>
+
+    <main>
+        <form action="mailto:hevellynalves09@gmail.com" method="post" enctype="text/plain">
+            <fieldset class="row">
+                <legend>Preencha as informações</legend>
+
+                <label for="nome" class="col-6">
+                    Informe seu Nome:
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </label>
+
+                <label for="email" class="col-6">
+                    Informe seu Email:
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </label>
+
+                <label for="telefone" class="col-4">
+                    Informe seu Telefone:
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </label>
+
+
+
+                <label for="produto" class="col-4">
+                    Qual produto você deseja avaliar?
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione</option>
+                        <option value="bola_interativa">Bola Interativa</option>
+                        <option value="laco_pet">Laço Pet</option>
+                        <option value="lenco_pet">Lenço Pet</option>
+                        <option value="racao_dog">Ração Dog</option>
+                        <option value="sache_felino">Sachê Felino</option>
+                        <option value="tigela_antiderrapante">Tigela Antiderrapante</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </label>
+
+                <fieldset class="col-2">
+                    <legend>O que mais gostou no produto?</legend>
+                    <label><input type="checkbox" id="qualidade" name="gostou" value="qualidade"> Qualidade</label>
+                    <label><input type="checkbox" id="preco" name="gostou" value="preço"> Preço</label>
+                    <label><input type="checkbox" id="durabilidade" name="gostou" value="durabilidade">
+                        Durabilidade</label>
+                </fieldset>
+
+                <fieldset class="col-2">
+                    <legend>Como avaliaria o produto?</legend>
+                    <label><input type="radio" id="otimo" name="avaliacao" value="ótimo" required> Ótimo</label>
+                    <label><input type="radio" id="regular" name="avaliacao" value="regular"> Regular</label>
+                    <label><input type="radio" id="ruim" name="avaliacao" value="ruim"> Ruim</label>
+                </fieldset>
+
+                <label for="descricao" class="col-12">
+                    Deixe sua opinião:
+                    <textarea id="descricao" name="descricao" rows="5" placeholder="Conte para nós o que você achou..."
+                        required></textarea>
+                </label>
+
+                <input type="submit" id="btnEnviar" value="Enviar" class="col-6">
+                <input type="reset" id="btnLimpar" value="Limpar" class="col-6">
+            </fieldset>
+        </form>
+
+        <p><a href="index.html">Voltar para tela inicial</a></p>
+    </main>
+
+    <footer>
+        <p>Ita Pet</p>
+        <p>Email: itapet@ita.com | Telefone: (79) 99999-9999</p>
+        <img src="img/logoItaPet.webp" alt="Logo Ita Pet" width="63" height="63">
+    </footer>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

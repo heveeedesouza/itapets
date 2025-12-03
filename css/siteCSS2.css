@@ -1,0 +1,284 @@
+a[href="index.html"],
+a[href="contato.html"] {
+    display: inline-block;
+    background-color: #0b1b3f;
+    color: #f5e7c4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    border: 2px solid #f5e7c4;
+}
+
+a[href="index.html"]:hover,
+a[href="contato.html"]:hover {
+    transform: scale(1.05);
+}
+
+article {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+article h3 {
+    color: #0b1b3f;
+    font-size: 19px;
+    margin: 10px 0 5px;
+}
+
+article p {
+    font-size: 15px;
+    color: #333;
+    border: 2px solid #0b1b3f;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fdfbf6;
+    display: inline-block;
+    width: 90%;
+}
+
+main dl {
+    margin: 20px 0;
+}
+
+main dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0b1b3f;
+}
+
+main dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.nomeProduto {
+    color: #0b1b3f;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #eae2cf;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form fieldset {
+    background-color: #ffffff;
+    border: 2px solid #0b1b3f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: 500;
+    color: #0b1b3f;
+    font-size: 18px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #0b1b3f;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    flex-direction: row;
+}
+
+fieldset input[type="checkbox"],
+fieldset input[type="radio"] {
+    margin-right: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 85%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    width: auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0b1b3f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #2d4fa3;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+[class^="col-"] {
+    flex: 1 1 auto;
+}
+
+
+.col-2 {
+    width: 5%;
+}
+
+.col-4 {
+    flex: 1 1 45%;
+    min-width: 250px;
+}
+
+.col-6 {
+    width: 65%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+h2+a[href="contato.html"] {
+    display: inline-block;
+    background-color: #0b1b3f;
+    color: #f5e7c4;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+h2,
+h2+a[href="contato.html"] {
+    display: block;
+    text-align: center;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 20px;
+}
+
+.FlexContainer article {
+    flex: 1 1 calc(25% - 1.5em);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.FlexContainer article:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .FlexContainer article {
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 900px) {
+    .FlexContainer article {
+        flex: 1 1 45%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .FlexContainer article {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    a[href="index.html"],
+    a[href="contato.html"] {
+        padding: 8px 16px;
+    }
+
+    .col-4 {
+        flex: 1 1 100%;
+    }
+}
+
+label.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
